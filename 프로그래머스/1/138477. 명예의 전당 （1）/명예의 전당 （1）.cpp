@@ -31,7 +31,7 @@ vector<int> solution(int k, vector<int> score)
     
     if (HoF.size() > k)
     {
-      HoF.erase(HoF.begin() + k, HoF.end());
+      HoF.resize(k);
     }
     answer.push_back(HoF.back());
   }
